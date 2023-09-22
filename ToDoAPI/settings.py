@@ -80,14 +80,9 @@ WSGI_APPLICATION = "ToDoAPI.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgres://todo_list_api_zbtb_user:vQPl3hRCriXGRHFl4yUdn56mTBhxytwm@dpg-ck4vf8pjbngc738769pg-a.oregon-postgres.render.com/todo_list_api_zbtb',
-        'NAME': 'todo_list_api_zbtb',
-        'USER': 'todo_list_api_zbtb_user',
-        'PASSWORD': 'vQPl3hRCriXGRHFl4yUdn56mTBhxytwm',
-        'HOST': 'dpg-ck4vf8pjbngc738769pg-a',
-        'PORT': 5432,
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
